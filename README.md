@@ -44,6 +44,21 @@ It never alters your files. No account, no subscription, no tracking, and no thi
   volume, so playback stays bit-perfect. Every request needs the secret token in the link, and **New Link** revokes it.
 - Media keys, Control Center "Now Playing", queue, shuffle, repeat, and it remembers where you left off.
 
+## Download
+
+Get the latest **Openfy.app** from [Releases](https://github.com/nijv/openfy/releases/latest) (Apple Silicon, macOS 14+).
+Unzip it and drag it to Applications.
+
+The app is free and isn't signed with a paid Apple Developer ID, so the first time you open it macOS says it
+"could not verify" it. That only happens once:
+
+1. Open Openfy and click **Done** on the warning.
+2. Go to **System Settings → Privacy & Security**, scroll down, and click **Open Anyway** next to Openfy.
+
+Or in Terminal: `xattr -dr com.apple.quarantine /Applications/Openfy.app`
+
+You can also build it yourself from source (below); it's the same app.
+
 ## Requirements
 
 - macOS 14 Sonoma or later, Apple Silicon
